@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# PHP
+/vendor/
+composer.lock
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+storage/logs/*
+!storage/logs/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+

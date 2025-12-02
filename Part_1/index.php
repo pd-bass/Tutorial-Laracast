@@ -5,7 +5,7 @@
     <title>Demo</title>
 </head>
 <body>
-    <h1>
+    <h1 align="center">
         <?php
             echo "Hello headline";
         ?>

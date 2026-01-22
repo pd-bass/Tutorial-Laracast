@@ -59,9 +59,20 @@
                     'active' => true,
                 ],
             ];
+
+            function filterByRole($users, $role) {
+                $filteredUsers = [];
+
+                foreach($users as $user) {
+                    if ($user['role'] === $role){
+                        $filteredUsers[] = $user;
+                    }
+                }
+                return $filteredUsers;
+            }
         ?>
         <ul >
-            <?php foreach ($users as $user) : ?>
+            <?php foreach (filterByRole($users, 'teacher') as $user) : ?>
                 <li> 
                     <?= $user['name'] ?> is a 
                     <?= $user['role'] ?> for
@@ -69,6 +80,5 @@
                 </li>
             <?php endforeach ?>
         </ul>
-        
     </body>
 </html>

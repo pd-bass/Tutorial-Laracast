@@ -59,9 +59,13 @@
                     'active' => true,
                 ],
             ];
+
+            $filteredUsers = array_filter($users, function ($item) {
+                return $item['id'] > 2;
+            }); 
         ?>
         <ul >
-            <?php foreach ($users as $user) : ?>
+            <?php foreach ($filteredUsers as $user) : ?>
                 <li> 
                     <?= $user['name'] ?> is a 
                     <?= $user['role'] ?> for
@@ -69,6 +73,5 @@
                 </li>
             <?php endforeach ?>
         </ul>
-        
     </body>
 </html>

@@ -47,3 +47,4 @@ $filteredUsers = array_filter($users, function ($item) {
 });
 
 require "index.view.php";
+?>

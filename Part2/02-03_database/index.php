@@ -3,7 +3,7 @@
 require "functions.php";
 require 'Database.php';
 
-// require 'router.php';
+// require 'Router.php';
 
 // connect to MySQL Database and execute a query.
 

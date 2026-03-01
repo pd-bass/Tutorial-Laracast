@@ -68,12 +68,4 @@ class Router {
 //    die();
 //}
 //// Load all route definitions from the routes.php file
-//$routes = require base_path('routes.php');
-//
-//// Get the current URI from the browser request
-//// parse_url breaks it into components, and ['path'] gets the path part
-//// Example: if URL is "http://example.com/about?foo=bar", $uri becomes "/about"
-//$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
-//
-//// Call the router function to handle the request
-//routeToController($uri, $routes);
+
